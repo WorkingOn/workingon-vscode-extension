@@ -11,14 +11,32 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.sayHello",
+        "onCommand:extension.updateToken",
+        "onCommand:extension.updateWorkingOn"
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            },
+            {
+                "command": "extension.updateToken",
+                "title": "Update Token"
+            },
+            {
+                "command": "extension.updateWorkingOn",
+                "title": "Update WorkingOn"
+            }
+        ],
+        "keybindings": [
+            {
+                "key": "meta+shift+u",
+                "command": "extension.updateWorkingOn"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
