@@ -11,17 +11,12 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello",
         "onCommand:extension.updateToken",
         "onCommand:extension.updateWorkingOn"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            },
             {
                 "command": "extension.updateToken",
                 "title": "Update Token"
