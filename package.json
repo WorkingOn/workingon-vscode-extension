@@ -33,7 +33,8 @@
         ],
         "keybindings": [
             {
-                "key": "meta+shift+u",
+                "key": "alt+shift+u",
+                "mac": "meta+shift+u",
                 "command": "extension.updateWorkingOn"
             }
         ]
